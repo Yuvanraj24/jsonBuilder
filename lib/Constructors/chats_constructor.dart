@@ -6,5 +6,9 @@ class ChatConstructor {
   String name;
 
   ChatConstructor(
-      {required this.name,required this.imageUrl, required this.subtext, required this.time});
+      {required this.name,
+      required this.imageUrl,
+      required this.subtext,
+      required this.time});
+
 }

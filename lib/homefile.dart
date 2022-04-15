@@ -1,4 +1,5 @@
 import 'package:dodo_demo_app/TabBar/status.dart';
+import 'package:dodo_demo_app/json_sample.dart';
 import 'package:flutter/material.dart';
 
 import 'builder/chatbuilder.dart';
@@ -52,7 +53,7 @@ class HomeScreen extends StatelessWidget {
        body:  TabBarView(children: [
           Icon(Icons.camera_alt),
             ChatBuilder(),
-            StatusList(),
+            JsonData(),
              Icon(Icons.camera_alt),
        ],)
       
