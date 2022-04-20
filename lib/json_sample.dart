@@ -2,6 +2,8 @@ import 'package:dodo_demo_app/user.dart';
 import 'package:flutter/material.dart';
 
 class JsonData extends StatefulWidget {
+  const JsonData({Key? key}) : super(key: key);
+
   // const JsonData({Key? key}) : super(key: key);
 
   @override
@@ -22,7 +24,7 @@ class _JsonDataState extends State<JsonData> {
         "userName": "aishu",
         "email": "aishu2412@gmail.com",
         "dp":
-            "https://www.pexels.com/photo/unrecognizable-tourist-standing-under-rough-cliff-in-mountains-during-vacation-3791466",
+            "https://cdn.mwallpapers.com/photos/celebrities/iswarya-menon/md/iswarya-menonhd-wallpapers-desktop-background-android-iphone-1080p-4k-ndmsm.jpg",
       }
     ];
     return data.map<User>(User.fromJson).toList();
@@ -43,15 +45,14 @@ buildUsers(List<User> users) => ListView.builder(
       itemBuilder: (context, index) {
         final user = users[index];
 
-        return Card(
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 28,
-              backgroundImage: NetworkImage(user.dp),
-            ),
-            title: Text(user.userName),
-            subtitle: Text(user.email),
+        return ListTile(
+          leading: CircleAvatar(
+            radius: 28,
+            backgroundImage: NetworkImage(user.dp),
           ),
+          title: Text(user.userName),
+          subtitle: Text(user.email),
+          
         );
       },
     );

@@ -5,22 +5,22 @@ storeData() {
   List<ChatConstructor> datas = [];
   ChatConstructor data =
       ChatConstructor(imageUrl: "", subtext: "", time: "", name: "");
-      //1
-  data.imageUrl =
-      "https://cdn.mwallpapers.com/photos/celebrities/iswarya-menon/md/iswarya-menonhd-wallpapers-desktop-background-android-iphone-1080p-4k-ndmsm.jpg";
-  data.subtext = "Good Morning";
-  data.time = "10.45 am";
-  data.name = "Aishu";
-  datas.add(data );
-  //2
+  //1
   data.imageUrl =
       "https://cdn.mwallpapers.com/photos/celebrities/iswarya-menon/md/iswarya-menonhd-wallpapers-desktop-background-android-iphone-1080p-4k-ndmsm.jpg";
   data.subtext = "Good Morning";
   data.time = "10.45 am";
   data.name = "Aishu";
   datas.add(data);
+  //2
+  data.imageUrl =
+      "https://cdn.mwallpapers.com/photos/celebrities/iswarya-menon/md/iswarya-menonhd-wallpapers-desktop-background-android-iphone-1080p-4k-ndmsm.jpg";
+  data.subtext = "ok...!";
+  data.time = "10.45 am";
+  data.name = "Aishu";
+  datas.add(data);
   //3
-    data.imageUrl =
+  data.imageUrl =
       "https://cdn.mwallpapers.com/photos/celebrities/iswarya-menon/md/iswarya-menonhd-wallpapers-desktop-background-android-iphone-1080p-4k-ndmsm.jpg";
   data.subtext = "Good Morning";
   data.time = "10.45 am";
@@ -28,6 +28,4 @@ storeData() {
   datas.add(data);
 
   return datas;
-  
-  
 }

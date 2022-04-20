@@ -4,6 +4,8 @@ import 'package:dodo_demo_app/data_strore/datas_passing.dart';
 import 'package:flutter/material.dart';
 
 class ChatBuilder extends StatefulWidget {
+  const ChatBuilder({Key? key}) : super(key: key);
+
   @override
   State<ChatBuilder> createState() => _ChatBuilderState();
 }
